@@ -1,18 +1,16 @@
-<<<<<<< HEAD
-# Compiled class file
-*.class
+# --- Environment files ---
 .env
 .env.*
-# Log file
+!.env.example
+
+# --- Java / build outputs ---
+target/
+*.class
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# --- Archives ---
 *.jar
 *.war
 *.nar
@@ -21,25 +19,16 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
-=======
-target/
+# --- Maven wrapper ---
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# --- IDE: IntelliJ IDEA ---
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### Eclipse ###
+# --- IDE: Eclipse ---
 .apt_generated
 .classpath
 .factorypath
@@ -48,19 +37,17 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# --- IDE: NetBeans ---
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# --- VS Code ---
 .vscode/
 
-### Mac OS ###
+# --- macOS / Windows noise ---
 .DS_Store
->>>>>>> 99c26cd (Initial commit)
+Thumbs.db
